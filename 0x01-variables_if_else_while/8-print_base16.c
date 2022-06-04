@@ -1,24 +1,22 @@
 #include <stdio.h>
 
 /**
- * main - entry point
- *
- * Description: Print all possible combinations of single-digit numbers
- * Return: 0
- */
+  * main - Prints a hexadecimal string
+  *
+  * Return: Always (Success)
+  */
 int main(void)
 {
-	int i = 0;
+	char c;
 
-	for (i = 0; i < 10; ++i)
+	for (c = '0'; c <= '9'; c++)
 	{
-		putchar('0' + i);
+		putchar(c);
+	}
 
-		if (i != 9)
-		{
-			putchar(',');
-			putchar(' ');
-		}
+	for (c = 'a'; c <= 'f'; c++)
+	{
+		putchar(c);
 	}
 
 	putchar('\n');
