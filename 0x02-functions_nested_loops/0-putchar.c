@@ -1,6 +1,7 @@
 #include "0-putchar.c"
-/** * main - Entry point * * Return: Always 0 */ int main(void) { 
-	_putchar('H'); _putchar('o'); _putchar('l'); _putchar('b'); 
-	_putchar('e'); _putchar('r'); _putchar('t'); _putchar('o'); 
-	_putchar('n'); _putchar('\n'); return (0);
+/** * main - Entry point * * Return: Always 0 (Success) */ int 
+main(void) {
+	char *sh = "0-putchar.c"; while (*sh) { _putchar(*sh); sh++;
+	}
+	_putchar('\n'); return (0);
 }
